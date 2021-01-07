@@ -10,16 +10,40 @@
 
 body {
   font-family: 'Public Sans', sans-serif;
+  font-size: 62.5%;
+  color: var(--grayish-blue);
 }
 
 .hero {
-  border: 2px solid red;
+  text-align: center;
+}
+
+.wrapper {
+  padding: 0 1.8rem;
+}
+
+.title {
+  border: 1px solid red;
+}
+
+.title__h1 {
+  border: 1px solid blue;
+  font-size: 2.2rem;
+  color: var(--dark-blue);
+  font-weight: 300;
+}
+
+.copy {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .button {
-  border: 1px solid red;
-  padding: 1rem 2rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
-  background-image: linear-gradient(to right, red 0%, blue 100%);
+  padding: .9rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 1.5rem;
+  color: var(--white);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--lime-green)), to(var(--bright-cyan)));
+  background-image: linear-gradient(to right, var(--lime-green) 0%, var(--bright-cyan) 100%);
 }
 /*# sourceMappingURL=style.css.map */
