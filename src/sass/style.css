@@ -18,8 +18,19 @@ body {
   text-align: center;
 }
 
+.hero .copy {
+  margin-bottom: 2.5rem;
+}
+
+.hero__image {
+  height: 300px;
+  margin: 0 -1.5rem;
+  background: url("../../static/images/image-mockups.png") center no-repeat;
+  background-size: 327px;
+}
+
 .wrapper {
-  padding: 0 1.8rem;
+  padding: 0 1.5rem;
 }
 
 .title {
@@ -27,15 +38,17 @@ body {
 }
 
 .title__h1 {
-  border: 1px solid blue;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: var(--dark-blue);
   font-weight: 300;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: .5rem;
 }
 
 .copy {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: .9rem;
+  line-height: 1.7;
 }
 
 .button {
