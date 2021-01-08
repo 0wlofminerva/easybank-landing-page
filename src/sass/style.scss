@@ -48,6 +48,16 @@ body {
         margin-bottom: .5rem;
     }
 
+    &__heading2 {
+        @extend .title__h1;
+    }
+
+    &__h2{
+        @extend .title__h1;
+        font-size: 1.5rem;
+        // border: 1px solid red;
+    } 
+
 }
 
 .button {
