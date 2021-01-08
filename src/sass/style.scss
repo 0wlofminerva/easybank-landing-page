@@ -2,6 +2,7 @@
 @import "./hero.scss";
 @import "./menu.scss";
 @import "./why.scss";
+@import "./latestArticles.scss";
 
 :root {
 // ### Primary 
@@ -52,11 +53,16 @@ body {
         @extend .title__h1;
     }
 
-    &__h2{
+    &__h2 {
         @extend .title__h1;
         font-size: 1.5rem;
         // border: 1px solid red;
-    } 
+    }
+    &__h3 {
+        @extend .title__h1;
+        font-size: 1.5rem;
+        // border: 1px solid red;
+    }
 
 }
 
