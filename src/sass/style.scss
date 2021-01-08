@@ -1,3 +1,8 @@
+@import "./header.scss";
+@import "./hero.scss";
+@import "./menu.scss";
+@import "./why.scss";
+
 :root {
 // ### Primary 
 --dark-blue: hsl(233, 26%, 24%);
@@ -17,22 +22,14 @@ body {
     color: var(--grayish-blue);
 }
 
-.hero {
-    // border: 2px solid red;
-    text-align: center;
-    .copy{
-        // border: 1px solid orange;
-        margin-bottom: 2.5rem;
-    }
+.copy {
+    font-size: .9rem;
+    line-height: 1.7;
+    // border: 1px solid red;
+}
 
-    &__image {
-        // border: 1px solid red;
-        height: 300px;
-        margin: 0 -1.5rem;
-        background: url('../../static/images/image-mockups.png') center bottom no-repeat, url('../../static/images/bg-intro-mobile.svg') center no-repeat;
-        background-size: 345px, cover;
-        margin-bottom: 1rem;
-    }
+.is-hidden {
+    display: none !important;
 }
 
 .wrapper {
@@ -40,7 +37,7 @@ body {
 }
 
 .title {
-    border: 1px solid red;
+    // border: 1px solid red;
     &__h1 {
         // border: 1px solid blue;
         font-size: 2.5rem;
@@ -51,12 +48,6 @@ body {
         margin-bottom: .5rem;
     }
 
-}
-
-.copy {
-    font-size: .9rem;
-    line-height: 1.7;
-    // border: 1px solid red;
 }
 
 .button {
