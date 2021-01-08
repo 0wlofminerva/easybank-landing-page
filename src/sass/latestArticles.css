@@ -7,10 +7,6 @@
   text-align: center;
 }
 
-.latestArticles .title_h3 {
-  text-align: left;
-}
-
 .latestArticles__grid {
   display: -ms-grid;
   display: grid;
