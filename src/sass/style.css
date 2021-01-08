@@ -30,6 +30,11 @@
   width: 40px;
 }
 
+.why {
+  text-align: center;
+  background: var(--light-grayish-blue);
+}
+
 :root {
   --dark-blue: hsl(233, 26%, 24%);
   --lime-green: hsl(136, 65%, 51%);
