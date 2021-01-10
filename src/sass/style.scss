@@ -3,6 +3,7 @@
 @import "./menu.scss";
 @import "./why.scss";
 @import "./latestArticles.scss";
+@import "./footer.scss";
 
 :root {
 // ### Primary 
@@ -94,10 +95,33 @@ body {
     background-repeat: no-repeat;
 }
 
+@mixin icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    background-repeat: no-repeat;
+}
+
 .icon {
     &__facebook {
         @include icon;
         background-image: url('../../static/images/icon-facebook.svg');
+    }
+    &__youtube {
+        @include icon;
+        background-image: url('../../static/images/icon-youtube.svg');
+    }
+    &__twitter {
+        @include icon;
+        background-image: url('../../static/images/icon-twitter.svg');
+    }
+    &__pinterest {
+        @include icon;
+        background-image: url('../../static/images/icon-pinterest.svg');
+    }
+    &__instagram {
+        @include icon;
+        background-image: url('../../static/images/icon-instagram.svg');
     }
 }
 

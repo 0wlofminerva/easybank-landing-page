@@ -1,6 +1,38 @@
 .footer {
-  border: 1px solid red;
   background: var(--dark-blue);
   color: var(--white);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer svg {
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.footer__link {
+  display: block;
+  color: var(--very-light-gray);
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: (25px)[5];
+      grid-template-columns: repeat(5, 25px);
+  grid-column-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2.5rem 0;
+}
+
+.footer__copyright {
+  color: var(--grayish-blue);
+  margin-top: 2.5rem;
 }
 /*# sourceMappingURL=footer.css.map */
