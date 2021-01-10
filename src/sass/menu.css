@@ -1,5 +1,28 @@
 .menu {
+  display: none;
+  list-style: none;
+}
+
+.menu__button {
   width: 40px;
+  height: 40px;
   background: url("../../static/images/icon-hamburger.svg") no-repeat center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--grayish-blue);
+  padding: 0 .8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu__button {
+    display: none;
+  }
 }
 /*# sourceMappingURL=menu.css.map */

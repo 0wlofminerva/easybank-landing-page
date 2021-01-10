@@ -38,6 +38,8 @@ body {
     padding: 0 1.5rem;
     max-width: 1150px;
     margin: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 @mixin title {
