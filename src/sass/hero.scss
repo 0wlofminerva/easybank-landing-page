@@ -1,52 +1,72 @@
 .hero {
-    // border: 2px solid red;
     text-align: center;
     padding-bottom: 5rem;
+    background: var(--very-light-gray);
 
     .copy {
-        // border: 1px solid orange;
         margin-bottom: 2.5rem;
     }
 
     &__image {
-        // border: 1px solid red;
         height: 300px;
-        margin: 0 -1.5rem;
+        margin: 0 calc(-1 * var(--wrapperSpace));
         background: url('../../static/images/image-mockups.png') center bottom no-repeat, url('../../static/images/bg-intro-mobile.svg') center no-repeat;
         background-size: 345px, cover;
-        margin-bottom: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    &__imageSrc {
+        display: none;
     }
     @media screen and (min-width: 768px) {
             text-align: left;
-            background: url('../../static/images/image-mockups.png') right top no-repeat, url('../../static/images/bg-intro-desktop.svg') right -400px top -240px no-repeat;
+            background: url('../../static/images/bg-intro-desktop.svg') left 650px top -290px no-repeat;
             background-size: cover;
-            min-height: 650px;
+            min-height: 550px;
             box-sizing: border-box;
+
             &__content {
-                border: 1px solid red;
+                position: relative;
                 display: grid; 
-                min-height: inherit;
                 align-items: center;
+                min-height: 550px;
                 grid-template-areas: "description image";
-                grid-template-columns: 480px 1fr;
-                // min-height: 650px;
+                grid-template-columns: 370px 1fr;
             }
             &__description {
-                border: 1px solid green;
+                // border: 1px solid green;
             }
+
             &__image {
                 grid-area: image;
                 min-height: inherit;
                 // background: none;
                 position: absolute;
-                border: 1px solid purple;
-                width: 730px;
+                // border: 1px solid purple;
+                width: 500px;
+                left: 0;
+                top: 0;
                 right: 0;
                 height: 768px;
-                background: url('../../static/images/image-mockups.png') right top no-repeat,
-                url('../../static/images/bg-intro-desktop.svg') right -110px bottom no-repeat;
+                background: url('../../static/images/image-mockups.png') left bottom no-repeat;
                 background-size: cover;
-
             }
+    }
+    @media screen and (min-width: 1024px) {
+    
+        &__content{
+            // position: static;
+        }
+        &__imageSrc {
+            display: block;
+            position: relative;
+            top: -150px;
+            z-index: 1;
+        }
+        &__image {
+            background: none;
+            left: 150px;
+            right: 0;
+            top: 0;
+        }
     }
 }
