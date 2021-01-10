@@ -16,4 +16,22 @@
         background-size: 345px, cover;
         margin-bottom: 1rem;
     }
+    @media screen and (min-width: 768px) {
+            text-align: left;
+            &__content {
+                border: 1px solid red;
+                display: grid;
+                align-items: center;
+                grid-template-areas: "description image";
+                grid-template-columns: 1fr 1fr;
+                min-height: 650px;
+            }
+            &__description {
+                border: 1px solid green;
+            }
+            &__image {
+                grid-area: image;
+                min-height: inherit;
+            }
+    }
 }

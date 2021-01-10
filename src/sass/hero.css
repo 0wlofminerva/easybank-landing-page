@@ -14,4 +14,31 @@
   background-size: 345px, cover;
   margin-bottom: 1rem;
 }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    text-align: left;
+  }
+  .hero__content {
+    border: 1px solid red;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+        grid-template-areas: "description image";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    min-height: 650px;
+  }
+  .hero__description {
+    border: 1px solid green;
+  }
+  .hero__image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: image;
+    min-height: inherit;
+  }
+}
 /*# sourceMappingURL=hero.css.map */
