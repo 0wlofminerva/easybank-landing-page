@@ -18,18 +18,23 @@
 @media screen and (min-width: 768px) {
   .hero {
     text-align: left;
+    background: url("../../static/images/image-mockups.png") right top no-repeat, url("../../static/images/bg-intro-desktop.svg") right -400px top -240px no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .hero__content {
     border: 1px solid red;
     display: -ms-grid;
     display: grid;
+    min-height: inherit;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
         grid-template-areas: "description image";
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    min-height: 650px;
+    -ms-grid-columns: 480px 1fr;
+        grid-template-columns: 480px 1fr;
   }
   .hero__description {
     border: 1px solid green;
@@ -39,6 +44,13 @@
     -ms-grid-column: 2;
     grid-area: image;
     min-height: inherit;
+    position: absolute;
+    border: 1px solid purple;
+    width: 730px;
+    right: 0;
+    height: 768px;
+    background: url("../../static/images/image-mockups.png") right top no-repeat, url("../../static/images/bg-intro-desktop.svg") right -110px bottom no-repeat;
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=hero.css.map */

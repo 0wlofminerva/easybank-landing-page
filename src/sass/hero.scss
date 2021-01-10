@@ -18,13 +18,18 @@
     }
     @media screen and (min-width: 768px) {
             text-align: left;
+            background: url('../../static/images/image-mockups.png') right top no-repeat, url('../../static/images/bg-intro-desktop.svg') right -400px top -240px no-repeat;
+            background-size: cover;
+            min-height: 650px;
+            box-sizing: border-box;
             &__content {
                 border: 1px solid red;
-                display: grid;
+                display: grid; 
+                min-height: inherit;
                 align-items: center;
                 grid-template-areas: "description image";
-                grid-template-columns: 1fr 1fr;
-                min-height: 650px;
+                grid-template-columns: 480px 1fr;
+                // min-height: 650px;
             }
             &__description {
                 border: 1px solid green;
@@ -32,6 +37,16 @@
             &__image {
                 grid-area: image;
                 min-height: inherit;
+                // background: none;
+                position: absolute;
+                border: 1px solid purple;
+                width: 730px;
+                right: 0;
+                height: 768px;
+                background: url('../../static/images/image-mockups.png') right top no-repeat,
+                url('../../static/images/bg-intro-desktop.svg') right -110px bottom no-repeat;
+                background-size: cover;
+
             }
     }
 }
