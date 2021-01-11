@@ -4,7 +4,7 @@
     color: var(--white);
     padding: 2rem 0;
     text-align: center;
-    svg {
+    &__logo {
         display: block;
         margin: auto;
         margin-bottom: 2rem;
@@ -25,5 +25,40 @@
     &__copyright {
         color: var(--grayish-blue);
         margin-top: 2.5rem;
+    }
+    @media screen and (min-width: 1024px) {
+        // background: red;
+        .wrapper {
+            display: grid;
+            grid-column-gap: 7rem;
+            grid-template-columns: 200px 1fr 400px;
+            grid-template-areas: "logo links button" "social links copyright";
+        }
+        &__links {
+            // border: 1px solid red;
+            grid-area: links;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: flex-start;
+        }
+        &__logo {
+            // border: 1px solid green;
+            grid-area: logo;
+            margin: initial;
+        }
+        &__social {
+            // border: 1px solid pink;
+            grid-area: social;
+        }
+        &__button {
+            // border: 1px solid white;
+            grid-area: button;
+            text-align: right;
+        }
+        &__copyright {
+            // border: 1px solid blue;
+            grid-area: copyright;
+            text-align: right;
+        }
     }
 }
