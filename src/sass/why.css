@@ -16,4 +16,24 @@
 .why__item img {
   margin-bottom: 1.5rem;
 }
+
+@media screen and (min-width: 768px) {
+  .why {
+    text-align: left;
+  }
+  .why__grid {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 1rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .why__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
 /*# sourceMappingURL=why.css.map */
