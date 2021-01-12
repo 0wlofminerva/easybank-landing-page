@@ -2,6 +2,8 @@
     // border: 1px solid red;
     display: none;
     list-style: none;
+    padding: 0;
+    margin: 0;
     &__button {
         // border: 1px solid orange;
         width: 40px;
@@ -12,6 +14,46 @@
         text-decoration: none;
         color: var(--grayish-blue);
         padding: 0 .8rem;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__checkbox {
+        display: none;
+        &:checked {
+            & ~ .menu__button {
+                  background: ur l('../../static/images/icon-close.svg') no-repeat center;
+            }
+            & ~ .menu {
+                display: block;
+                position: absolute;
+                top: 100%;
+                padding: 2rem 1rem;
+                left: 0rem;
+                right: 0rem;
+                height: 100vh;
+                background: linear-gradient(to bottom, var(--dark-blue) 0%, transparent 90%);
+                .menu__item {
+                    &:first-of-type a {
+                        padding-top: 2rem;
+                        border-radius: .5rem .5rem 0 0;
+                    } 
+                    &:last-of-type a {
+                        padding-bottom: 2rem;
+                        border-radius: 0 0 .5rem .5rem;
+                    }
+                }
+                a {
+                    background: white;
+                    padding: .8rem 1rem;
+                    color: var(--dark-blue);
+                    font-size: 1.1rem;
+                    display: block;
+                    text-align: center;
+                    }
+            }
+        }
     }
     @media screen and (min-width: 1024px) {
         display: flex;
